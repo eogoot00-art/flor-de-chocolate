@@ -1,0 +1,109 @@
+{
+  "name": "Flor de Chocolate - Doceria Artesanal",
+  "short_name": "Flor de Chocolate",
+  "description": "Doceria artesanal especializada em doces únicos feitos com ingredientes premium. Brigadeiros, bolos, trufas e muito mais!",
+  "version": "2.1.0",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#5D4037",
+  "background_color": "#FFFBF5",
+  "lang": "pt-BR",
+  "scope": "/",
+  "categories": ["food", "shopping", "lifestyle"],
+  "icons": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'><rect width='192' height='192' fill='%23FFFBF5' rx='20'/><text x='96' y='130' font-size='120' text-anchor='middle'>🌺</text></svg>",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><rect width='512' height='512' fill='%23FFFBF5' rx='50'/><text x='256' y='350' font-size='320' text-anchor='middle'>🌺</text></svg>",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 144 144'><rect width='144' height='144' fill='%23FFFBF5' rx='15'/><text x='72' y='100' font-size='90' text-anchor='middle'>🌺</text></svg>",
+      "sizes": "144x144",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 96 96'><rect width='96' height='96' fill='%23FFFBF5' rx='10'/><text x='48' y='65' font-size='60' text-anchor='middle'>🌺</text></svg>",
+      "sizes": "96x96",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 72 72'><rect width='72' height='72' fill='%23FFFBF5' rx='8'/><text x='36' y='50' font-size='45' text-anchor='middle'>🌺</text></svg>",
+      "sizes": "72x72",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'><rect width='48' height='48' fill='%23FFFBF5' rx='5'/><text x='24' y='33' font-size='30' text-anchor='middle'>🌺</text></svg>",
+      "sizes": "48x48",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 540 720'><rect width='540' height='720' fill='%23FFFBF5'/><rect x='0' y='0' width='540' height='80' fill='%235D4037'/><text x='270' y='50' font-size='24' text-anchor='middle' fill='white'>Flor de Chocolate</text><rect x='20' y='100' width='500' height='200' fill='white' rx='10'/><text x='270' y='180' font-size='32' text-anchor='middle'>🌺</text><text x='270' y='220' font-size='18' text-anchor='middle'>Doces Artesanais</text><text x='270' y='250' font-size='14' text-anchor='middle'>Feitos com muito carinho</text></svg>",
+      "sizes": "540x720",
+      "type": "image/svg+xml",
+      "form_factor": "narrow"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Ver Produtos",
+      "short_name": "Produtos",
+      "description": "Veja nossos doces artesanais",
+      "url": "/#doces",
+      "icons": [
+        {
+          "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 96 96'><text x='48' y='65' font-size='60' text-anchor='middle'>🍰</text></svg>",
+          "sizes": "96x96",
+          "type": "image/svg+xml"
+        }
+      ]
+    },
+    {
+      "name": "Carrinho",
+      "short_name": "Carrinho",
+      "description": "Veja seus produtos selecionados",
+      "url": "/#carrinho",
+      "icons": [
+        {
+          "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 96 96'><text x='48' y='65' font-size='60' text-anchor='middle'>🛒</text></svg>",
+          "sizes": "96x96",
+          "type": "image/svg+xml"
+        }
+      ]
+    },
+    {
+      "name": "WhatsApp",
+      "short_name": "Contato",
+      "description": "Entre em contato conosco",
+      "url": "https://wa.me/5512992216807",
+      "icons": [
+        {
+          "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 96 96'><text x='48' y='65' font-size='60' text-anchor='middle'>💬</text></svg>",
+          "sizes": "96x96",
+          "type": "image/svg+xml"
+        }
+      ]
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false,
+  "edge_side_panel": {
+    "preferred_width": 400
+  },
+  "launch_handler": {
+    "client_mode": "navigate-existing"
+  }
+}

@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Flor de Chocolate - Sabores que Encantam</title>
+    <meta name="description" content="Doceria artesanal especializada em doces únicos feitos com ingredientes premium. Brigadeiros, bolos, trufas e muito mais!">
+    <meta name="keywords" content="doceria, doces artesanais, brigadeiro, bolo, trufa, chocolate, São José dos Campos">
+    <meta name="author" content="Flor de Chocolate">
+    <meta property="og:title" content="Flor de Chocolate - Sabores que Encantam">
+    <meta property="og:description" content="Doceria artesanal com doces únicos feitos com muito carinho">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌺</text></svg>">
+</head>
+<body>
+    <!-- Skip link para acessibilidade -->
+    <a href="#inicio" class="skip-link">Pular para o conteúdo principal</a>
+    
+    <!-- ============================================
+         CABEÇALHO (HEADER)
+         Logo, nome da doceria e menu de navegação
+         ============================================ -->
+    <header class="header">
+        <!-- Botão escondido para login de administrador -->
+        <button class="admin-login-btn" onclick="abrirModalAdminLogin()" title="Login Administrador" aria-label="Login Administrador">
+            🔐
+        </button>
+        <div class="container">
+            <div class="logo">
+                <div class="logo-icon">🌺</div>
+                <div class="logo-text">
+                    <h1>Flor de Chocolate</h1>
+                    <p class="tagline">Sabores que Encantam</p>
+                </div>
+            </div>
+            <div class="header-social">
+                <button class="header-carrinho" id="btnCarrinho" onclick="console.log('Botão clicado!'); abrirModalCarrinho();" aria-label="Carrinho de Compras">
+                    <span class="carrinho-icon">🛒</span>
+                    <span class="carrinho-contador" id="carrinhoContador">0</span>
+                </button>
+                <a href="https://www.instagram.com/flor_de_chocolate2025?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="header-instagram" aria-label="Instagram" rel="noopener">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🌺%3C/text%3E%3C/svg%3E" alt="Flor de Chocolate" class="instagram-image" loading="lazy">
+                    <span class="instagram-text">@flor_de_chocolate2025</span>
+                </a>
+            </div>
+            <nav class="nav">
+                <a href="#inicio">Início</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#doces">Doces</a>
+                <a href="#promocoes">Promoções</a>
+                <a href="#contato">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ============================================
+         SEÇÃO INICIAL (HERO SECTION)
+         Frase de impacto e chamada para ação
+         ============================================ -->
+    <section id="inicio" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h2 class="hero-title">Cada mordida é um Abraço Doce</h2>
+            <p class="hero-subtitle">Bem-vindo ao nosso mundo de sabores artesanais, onde cada doce é preparado com ingredientes selecionados e muito carinho. Transformamos momentos simples em experiências memoráveis que aquecem o coração e adoçam a alma.</p>
+            <a href="#doces" class="btn-primary">Descubra Nossos Sabores</a>
+        </div>
+        <div class="floating-elements">
+            <div class="floating-element element-1">🌺</div>
+            <div class="floating-element element-2">🍪</div>
+            <div class="floating-element element-3">🌺</div>
+            <div class="floating-element element-4">🍪</div>
+            <div class="floating-element element-5">🌺</div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SEÇÃO "SOBRE NÓS"
+         História da doceria, qualidade e carinho
+         ============================================ -->
+    <section id="sobre" class="sobre">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Sobre Nós</h2>
+                <div class="title-decoration"></div>
+            </div>
+            <div class="sobre-content">
+                <div class="sobre-text">
+                    <p>Bem-vindo à <strong>Flor de Chocolate</strong>, onde cada doce conta uma história de paixão, dedicação e muito amor pela confeitaria artesanal. Nossa jornada começou com um sonho simples: transformar ingredientes selecionados em momentos doces que ficam guardados na memória para sempre.</p>
+                    <p>Aqui, acreditamos que fazer doces vai muito além de misturar ingredientes. É uma forma de <strong>expressar carinho</strong>, de celebrar a vida e de criar conexões especiais. Cada brigadeiro, cada bolo, cada doce que sai das nossas mãos é preparado com atenção aos mínimos detalhes, utilizando apenas <strong>ingredientes de primeira qualidade</strong> e técnicas que respeitam a tradição artesanal.</p>
+                    <p>Nossa paixão pela confeitaria nos move a buscar sempre o melhor. Trabalhamos com <strong>chocolates premium</strong>, frutas frescas selecionadas e receitas que foram aperfeiçoadas ao longo do tempo. Cada produto é uma obra de arte única, feita especialmente para você.</p>
+                    <p>Estamos aqui para tornar seus momentos ainda mais especiais. Seja um aniversário, uma celebração ou simplesmente um dia em que você merece um mimo, nossos doces estão prontos para adoçar sua vida. <strong>Venha nos conhecer e descubra o sabor do verdadeiro carinho artesanal!</strong></p>
+                </div>
+                <div class="sobre-features">
+                    <div class="feature">
+                        <div class="feature-icon">🎂</div>
+                        <h3>Artesanal</h3>
+                        <p>Feito à mão com muito carinho e atenção aos detalhes</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">⭐</div>
+                        <h3>Qualidade</h3>
+                        <p>Ingredientes selecionados e de procedência confiável</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">💝</div>
+                        <h3>Especial</h3>
+                        <p>Para transformar momentos simples em experiências únicas</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SEÇÃO "NOSSOS DOCES"
+         Cards de produtos com imagem, nome e descrição
+         ============================================ -->
+    <section id="doces" class="produtos">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nossos Doces</h2>
+                <div class="title-decoration"></div>
+                <p class="section-subtitle">Descubra nossos sabores únicos e deixe-se envolver pela doçura artesanal que transforma qualquer momento em algo especial</p>
+            </div>
+            <div class="produtos-grid" id="produtosGrid">
+                <!-- Produtos serão adicionados dinamicamente via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SEÇÃO DE PROMOÇÕES OU DESTAQUES
+         Doces em promoção ou mais vendidos
+         ============================================ -->
+    <section id="promocoes" class="promocoes">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Promoções e Destaques</h2>
+                <div class="title-decoration"></div>
+                <p class="section-subtitle">Os queridinhos que conquistaram o coração dos nossos clientes e se tornaram verdadeiros sucessos</p>
+            </div>
+            <div class="promocoes-grid" id="promocoesGrid">
+                <!-- Promoções e destaques são preenchidos dinamicamente via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SEÇÃO DE CONTATO
+         Botões de WhatsApp e Instagram
+         ============================================ -->
+    <section id="contato" class="contato">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Entre em Contato</h2>
+                <div class="title-decoration"></div>
+            </div>
+            <div class="contato-content">
+                <p class="contato-text">Estamos aqui para tornar seus momentos ainda mais doces e especiais!</p>
+                <p class="contato-text">Tem alguma dúvida, quer fazer um pedido personalizado ou simplesmente bater um papo sobre doces? Adoraríamos conversar com você!</p>
+                <p class="contato-text-destaque">Entre em contato agora mesmo e descubra como podemos adoçar sua vida!</p>
+                <div class="contato-buttons">
+                    <a href="https://wa.me/5512992216807" target="_blank" class="btn-whatsapp" rel="noopener">
+                        <span class="whatsapp-icon">💬</span>
+                        Falar no WhatsApp
+                    </a>
+                    <a href="https://www.instagram.com/flor_de_chocolate2025?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="btn-instagram" rel="noopener">
+                        <span class="instagram-icon">📷</span>
+                        Seguir no Instagram
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         RODAPÉ (FOOTER)
+         Redes sociais e direitos autorais
+         ============================================ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>🌺 Flor de Chocolate</h3>
+                    <p>Sabores que encantam e momentos que ficam na memória. Doces artesanais feitos com amor e ingredientes selecionados.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Navegação</h4>
+                    <ul class="footer-links">
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#doces">Doces</a></li>
+                        <li><a href="#promocoes">Promoções</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <p>WhatsApp: +55 12 99221-6807</p>
+                    <p>Email: flordechocolate2026@gmail.com</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Redes Sociais</h4>
+                    <div class="social-links">
+                        <a href="https://wa.me/5512992216807" target="_blank" class="social-link" aria-label="WhatsApp" rel="noopener">
+                            <span>💬</span> WhatsApp
+                        </a>
+                        <a href="https://www.instagram.com/flor_de_chocolate2025?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="social-link" aria-label="Instagram" rel="noopener">
+                            <span>📷</span> Instagram
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Flor de Chocolate. Todos os direitos reservados.</p>
+                <p class="footer-credits">Feito com ❤️ para adoçar sua vida</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================
+         MODAL DO CARRINHO
+         Visualização e gerenciamento do carrinho
+         ============================================ -->
+    <div id="modalCarrinho" class="modal-carrinho">
+        <div class="modal-carrinho-content">
+            <button class="modal-carrinho-close" onclick="fecharModalCarrinho()">&times;</button>
+            <div class="modal-carrinho-header">
+                <h2>🛒 Meu Carrinho</h2>
+            </div>
+            <div class="carrinho-body">
+                <div id="carrinhoItens" class="carrinho-itens">
+                    <!-- Itens do carrinho serão adicionados dinamicamente -->
+                </div>
+                <div class="carrinho-footer">
+                    <div class="carrinho-total">
+                        <strong>Total:</strong>
+                        <span id="carrinhoTotal" class="carrinho-total-valor">R$ 0,00</span>
+                    </div>
+                    <div class="carrinho-acoes">
+                        <button class="btn-limpar-carrinho" onclick="limparCarrinho()">
+                            Limpar Carrinho
+                        </button>
+                        <button class="btn-finalizar-carrinho" id="btnFinalizarCarrinho" onclick="finalizarCompraCarrinho()">
+                            Finalizar Compra
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================
+         MODAL DE COMPRA
+         Formulário para coletar CEP e endereço
+         ============================================ -->
+    <div id="modalCompra" class="modal-compra">
+        <div class="modal-compra-content">
+            <button class="modal-compra-close" onclick="fecharModalCompra()">&times;</button>
+            <div class="modal-compra-header">
+                <h2>🌺 Finalizar Pedido</h2>
+                <p class="modal-produto-info" id="modalProdutoInfo"></p>
+            </div>
+            <form id="formCompra" class="form-compra">
+                <div class="form-group">
+                    <label for="cep">CEP *</label>
+                    <div class="cep-input-group">
+                        <input 
+                            type="text" 
+                            id="cep" 
+                            name="cep" 
+                            placeholder="00000-000" 
+                            maxlength="9"
+                            required
+                            pattern="[0-9]{5}-?[0-9]{3}"
+                        >
+                        <button type="button" class="btn-buscar-cep" onclick="buscarCEP()">
+                            🔍 Buscar
+                        </button>
+                    </div>
+                    <small class="form-help">Digite o CEP para preencher automaticamente</small>
+                </div>
+                
+                <div class="form-group">
+                    <label for="endereco">Endereço Completo *</label>
+                    <input 
+                        type="text" 
+                        id="endereco" 
+                        name="endereco" 
+                        placeholder="Rua, número, complemento, bairro"
+                        required
+                    >
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="cidade">Cidade *</label>
+                        <input 
+                            type="text" 
+                            id="cidade" 
+                            name="cidade" 
+                            placeholder="Nome da cidade"
+                            required
+                        >
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="estado">Estado *</label>
+                        <input 
+                            type="text" 
+                            id="estado" 
+                            name="estado" 
+                            placeholder="UF"
+                            maxlength="2"
+                            required
+                        >
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="observacoes">Observações (opcional)</label>
+                    <textarea 
+                        id="observacoes" 
+                        name="observacoes" 
+                        rows="3"
+                        placeholder="Alguma observação sobre o pedido?"
+                    ></textarea>
+                </div>
+                
+                <div class="form-actions">
+                    <button type="button" class="btn-cancelar" onclick="fecharModalCompra()">
+                        Cancelar
+                    </button>
+                    <button type="submit" class="btn-enviar-whatsapp">
+                        💬 Enviar para WhatsApp
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- ============================================
+         MODAL DE LOGIN ADMINISTRADOR
+         ============================================ -->
+    <div id="modalAdminLogin" class="modal-login">
+        <div class="modal-login-content">
+            <button class="modal-login-close" onclick="fecharModalAdminLogin()">&times;</button>
+            <div class="modal-login-header">
+                <h2>🔐 Login Administrador</h2>
+            </div>
+            <form id="formAdminLogin" class="form-login">
+                <div class="form-group">
+                    <label for="adminUsuario">Usuário *</label>
+                    <input type="text" id="adminUsuario" name="usuario" placeholder="Usuário" required>
+                </div>
+                <div class="form-group">
+                    <label for="adminSenha">Senha *</label>
+                    <input type="password" id="adminSenha" name="senha" placeholder="Senha" required>
+                </div>
+                <button type="submit" class="btn-login-submit">Entrar</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- ============================================
+         PAINEL ADMINISTRATIVO
+         ============================================ -->
+    <div id="painelAdmin" class="painel-admin" style="display: none;">
+        <div class="painel-admin-header">
+            <h2>🔐 Painel Administrativo</h2>
+            <div class="painel-admin-stats">
+                <div class="stat-item">
+                    <span class="stat-label">Visitantes:</span>
+                    <span class="stat-value" id="totalVisitantes">0</span>
+                </div>
+            </div>
+            <button class="btn-sair-admin" onclick="sairAdmin()">Sair</button>
+        </div>
+        <div class="painel-admin-content">
+            <div class="painel-tabs">
+                <button class="painel-tab active" onclick="mostrarTabAdmin('produtos')">Gerenciar Produtos</button>
+                <button class="painel-tab" onclick="mostrarTabAdmin('promocoes')">Promoções e Destaques</button>
+                <button class="painel-tab" onclick="mostrarTabAdmin('visitantes')">Visitantes</button>
+            </div>
+            
+            <!-- Tab de Produtos -->
+            <div id="tabProdutos" class="painel-tab-content active">
+                <div class="admin-section">
+                    <h3>Adicionar Novo Produto</h3>
+                    <form id="formAdicionarProduto" class="form-admin" onsubmit="executarAdicionarProduto(); return false;">
+                        <div class="form-row-admin">
+                            <div class="form-group">
+                                <label for="produtoNome">Nome do Produto *</label>
+                                <input type="text" id="produtoNome" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="produtoPreco">Preço (R$) *</label>
+                                <input type="number" id="produtoPreco" step="0.01" min="0" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="produtoDescricao">Descrição *</label>
+                            <textarea id="produtoDescricao" rows="3" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label title="Exibir este produto na seção Promoções e Destaques">
+                                <input type="checkbox" id="produtoDestaque" style="margin-right: 8px;"> ⭐ Exibir em Promoções e Destaques
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label for="produtoImagem">Imagem do Produto (opcional)</label>
+                            <input type="file" id="produtoImagem" accept="image/*" onchange="previewImagem(this, 'previewNovaImagem')">
+                            <div id="previewNovaImagem" class="imagem-preview" style="display: none; margin-top: 10px;">
+                                <img id="imgPreviewNova" src="" alt="Preview" style="max-width: 200px; max-height: 200px; border-radius: 10px; border: 2px solid var(--chocolate-light);">
+                                <button type="button" onclick="removerPreview('previewNovaImagem', 'produtoImagem')" style="margin-top: 10px; padding: 5px 15px; background: #E53935; color: white; border: none; border-radius: 5px; cursor: pointer;">Remover Imagem</button>
+                            </div>
+                        </div>
+                        <button type="button" id="btnAdicionarProduto" class="btn-admin" onclick="executarAdicionarProduto(); return false;">➕ Adicionar Produto</button>
+                    </form>
+                </div>
+                
+                <div class="admin-section">
+                    <h3>Produtos Cadastrados</h3>
+                    <div id="listaProdutosAdmin" class="lista-produtos-admin">
+                        <!-- Produtos serão listados aqui -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab de Promoções e Destaques -->
+            <div id="tabPromocoes" class="painel-tab-content">
+                <div class="admin-section">
+                    <h3>Adicionar Promoção ou Destaque</h3>
+                    <form id="formAdicionarPromocao" class="form-admin" onsubmit="executarAdicionarPromocao(); return false;">
+                        <div class="form-row-admin">
+                            <div class="form-group">
+                                <label for="promocaoNome">Nome *</label>
+                                <input type="text" id="promocaoNome" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="promocaoBadge">Badge (ex: Mais Vendido, Promoção, Novidade)</label>
+                                <input type="text" id="promocaoBadge" placeholder="Promoção">
+                            </div>
+                        </div>
+                        <div class="form-row-admin">
+                            <div class="form-group">
+                                <label for="promocaoPrecoOriginal">Preço original (R$) *</label>
+                                <input type="number" id="promocaoPrecoOriginal" step="0.01" min="0" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="promocaoPrecoPromocao">Preço promocional (R$) *</label>
+                                <input type="number" id="promocaoPrecoPromocao" step="0.01" min="0" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="promocaoEmoji">Emoji (ex: 🍫 🎂 🧁)</label>
+                            <input type="text" id="promocaoEmoji" placeholder="🍰" maxlength="4" style="width: 80px;">
+                        </div>
+                        <div class="form-group">
+                            <label for="promocaoDescricao">Descrição *</label>
+                            <textarea id="promocaoDescricao" rows="3" required></textarea>
+                        </div>
+                        <button type="button" id="btnAdicionarPromocao" class="btn-admin" onclick="executarAdicionarPromocao(); return false;">➕ Adicionar Promoção</button>
+                    </form>
+                </div>
+                <div class="admin-section">
+                    <h3>Promoções e Destaques Cadastrados</h3>
+                    <div id="listaPromocoesAdmin" class="lista-produtos-admin">
+                        <!-- Lista preenchida via JavaScript -->
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Tab de Visitantes -->
+            <div id="tabVisitantes" class="painel-tab-content">
+                <div class="admin-section">
+                    <h3>Estatísticas de Visitantes</h3>
+                    <div id="listaVisitantes" class="lista-visitantes">
+                        <!-- Visitantes serão listados aqui -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Firebase para sincronizar produtos e promoções para todos os visitantes -->
+    <script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-firestore-compat.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Doceria Firebase</title>
+</head>
+
+<body>
+
+<h1>🍫 Produtos da Doceria</h1>
+
+<div id="produtos"></div>
+
+<script type="module">
+
+// 🔥 IMPORT FIREBASE
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+import { getFirestore, collection, getDocs } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+
+// ⭐ COLE SEU firebaseConfig AQUI
+const firebaseConfig = {
+  apiKey: "COLE_AQUI",
+  authDomain: "COLE_AQUI",
+  projectId: "COLE_AQUI",
+  storageBucket: "COLE_AQUI",
+  messagingSenderId: "COLE_AQUI",
+  appId: "COLE_AQUI"
+};
+
+// 🔥 CONECTAR FIREBASE
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+
+console.log("Firebase conectado");
+
+// 🚀 CARREGAR PRODUTOS
+async function carregarProdutos() {
+
+  const produtosDiv = document.getElementById("produtos");
+
+  const querySnapshot = await getDocs(collection(db, "produtos"));
+
+  querySnapshot.forEach((doc) => {
+
+    const p = doc.data();
+
+    produtosDiv.innerHTML += `
+      <div style="border:1px solid #ccc; padding:10px; margin:10px;">
+        <h3>${p.nome}</h3>
+        <p>Preço: R$ ${p.preco}</p>
+        <p>${p.descricao || ""}</p>
+      </div>
+    `;
+  });
+
+}
+
+carregarProdutos();
+
+</script>
+
+</body>
+</html>
